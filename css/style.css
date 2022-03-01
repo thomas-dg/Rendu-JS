@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+:root{
+    --bg-color:#eee;
+    --text-color:black;
+    --pad-color:rgb(207, 207, 207);
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: var(--bg-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.darkMode{
+    --bg-color:#48484A;
+    --text-color:white;
+    --pad-color:rgb(94, 93, 93);
+}
+
+.darkMode form{
+    border: 1px solid;
+}
+
+
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header h1{
+    margin-left: 100px;
+    
+}
+
+header h1 span{
+    color: orange;
+}
+
+.navRight{
+    display: flex;
+    list-style: none;
+    margin-right: 100px;
+    align-items: center;
+}
+
+
+
+.navRight li a{
+    padding: 5px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    font-size: 17px;
+    outline: none;
+}
+
+.navRight li a:hover{
+    background-color: var(--pad-color);
+}
+
+.navRight li a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+
+/* Swiper */
+
+.swiper {
+    width: 100%;
+    height: 75%;
+    
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.slideBat{
+    background-image: url(../img/new_bat.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.slideMeet{
+    background-image: url(../img/defis-projets-annee-preparatoire-iim.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.slideAsso{
+    background-image: url(../img/TakeOffNova_4-scaled.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* Text Swiper */
+
+.textSwipe{
+    padding: 25px;
+    /* backdrop-filter: blur(5px); */
+    border-radius: 8px;
+    margin-left: 90px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.subtitle{
+    margin: 0;
+}
+
+/* Button and Arrow Swiper */
+
+body .swiper-pagination-bullet-active{
+    background: orangered;
+}
+
+body .swiper-button-next,
+body .swiper-button-prev{
+    color: orangered;
+}
+
+/* Tabs */
+
+section{
+    width: 85%;
+    margin: auto;
+}
+
+section h1{
+    display: inline-block;
+    text-align: center;
+    
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid;
+}
+
+.tabAxe{
+    width: 100%;
+}
+
+.axeName{
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+
+.content ul li:first-child{
+    list-style: none;
+    color: orange;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.tab{
+    padding: 15px 15px;
+    font-size: 20px;
+    border-right: 1px solid;
+    cursor: pointer	;
+    background-color: rgb(160, 160, 160);
+}
+
+.tab:last-child{
+    border-right: none;
+}
+
+.tab-active{
+    background-color: orange;
+}
+
+.content{
+    margin: 0 146px 0 40px;
+    padding: 0 10px;
+    font-size: 20px;
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+
+/* Forms */
+
+form{
+    width: 50%;
+    margin: auto;
+    background-color: #48484A;
+    color: white;
+    padding: 20px 0 50px 50px;
+    margin-bottom: 50px;
+}
+
+.titleForm{
+    color: orange;
+    width: fit-content;
+    border-bottom: 1px solid;
+}
+
+.formChoice{
+    padding-left: 20px;
+}
+
+.textForm{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding-bottom: 20px;
+}
+
+.textForm label{
+    padding-bottom: 5px;
+    font-size: 17px;
+}
+
+.textForm input{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
+    color: white;
+    /* padding-bottom: 3px; */
+    padding: 5px;
+}
+
+.error{
+    color: red;
+    /* border: 1px solid red; */
+}
+
+.error input{
+    border: 1px solid red;
+}
+
+
+
+.grade h2{
+    font-weight: lighter;
+    border-bottom: 1px solid white;
+    width: fit-content;
+}
+
+.radioChoice{
+    display: flex;
+    flex-direction: column;
+}
+
+.radioChoice div{
+    padding-bottom: 5px;
+}
+
+.selectAxe h2{
+    font-weight: lighter;
+    border-bottom: 1px solid;
+    width: fit-content;
+}
+
+select{
+    background-color: #575758;
+    color: white;
+}
+
+.submitForm{
+    margin-top: 30px;
+    background-color: orange;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 20%;
+    color: white;
+    font-size: 17px;
+}
+
+.success{
+    font-size: 20px;
+}
+
+/* Dark Mode */
+
+footer{
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+}
+
+.themeRight{
+    border: none;
+    color: white;
+    background-color: transparent;
+    
+}
+.themeRight i{
+    box-shadow: 0px 2px 5px 0px #131313;
+    background-color: #272727;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.themeRight i:active{
+    transform: translateY(1px);
+}
